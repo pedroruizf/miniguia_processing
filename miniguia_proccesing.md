@@ -27,6 +27,18 @@ En processing el origen de coordenadas (0,0) se encuentra en la esquina superior
 **strokeWeight (grosor)**: establece el grosor de borde.
 **noFill()**: elimina el relleno.
 **noStroke()**: elimina los bordes.
-
 Ejemplo de programa secuencial, utilizando las órdenes anteriores:
+~~~
+size (500,450);
+background(0,255,0);
+stroke (255,0,0);
+strokeWeight (6);
+fill (0,0,255);
+rect (100,100,100,50);
+noStroke();
+ellipse (200,200,80,80);
+noFill();
+stroke (255,0,0);
+line (300,300,500,450);
+~~~
 
