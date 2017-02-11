@@ -27,6 +27,7 @@ En processing el origen de coordenadas (0,0) se encuentra en la esquina superior
 **strokeWeight (grosor)**: establece el grosor de borde.
 **noFill()**: elimina el relleno.
 **noStroke()**: elimina los bordes.
+
 Ejemplo de programa secuencial, utilizando las órdenes anteriores:
 ~~~
 size (500,450);
@@ -41,4 +42,40 @@ noFill();
 stroke (255,0,0);
 line (300,300,500,450);
 ~~~
+###Estructura básica de programa en Processing
+En processing tenemos dos funciones principales (void), una de ellas es *setup* y la otra *draw*, en la primera se realiza una configuración de nuestro programa, por ejemplo el tamaño de la ventana gráfica con *size (tamañoX, tamañoY)*, y se ejecuta una sóla vez. En la función *draw* todo lo que esté definido en la misma se va a repetir indefinidamente.
+En el siguiente programa antes del *setup* definimos la variable x como entera (integer) (*int x*), y en el draw en cada ciclo aumentamos su valor (x=x+1), cambiando el color de fondo y desplazando hacia la derecha la circunferencia.
+~~~
+int x=0;
 
+void setup() {
+  size (500, 500);
+}
+
+void draw() {
+  background(0, x, 0);
+  ellipse (x, 250, 50, 50);
+  x=x+1;
+}
+~~~
+Otros ejemplos:
+El siguiente programa versa sobre una pelota de diámetro 20 que se dibuja en la mitad de la altura del área gráfica y se desplaza de izquierda a derecha rebotando en las paredes laterales.
+~~~
+int x=10;
+int velx=3;
+int diametro=20;
+
+void setup() {
+ size (400,400);
+ background(0);
+ fill (255);
+ }
+
+void draw() {
+background (0);  
+ellipse (x,height/2,diametro,diametro);
+if (x<(diametro/2)) {velx=-velx;}
+if (x>width-(diametro/2)) {velx=-velx;}
+x=x+velx;
+}
+~~~
