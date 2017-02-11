@@ -81,3 +81,9 @@ void draw() {
  x=x+velx;
 }
 ~~~
+###Variables
+En el ejemplo anterior hemos trabajado con variables, que son elementos sirven para guardar datos que usaremos luego en nuestro programa, las variables pueden ser globales (afectan a todos los procedimientos y se colocan antes de setup) o locales se definen y usan en una función y sólo sirven en ella (ya definiremos las funciones más tarde).
+|**Tipo de variable** | **¿Qué guardan?** | **Ejemplo**|
+|-- | -- | --|
+|integer | hola | hola|
+ 
