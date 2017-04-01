@@ -1,4 +1,4 @@
-#Miniguía de Processing
+# Miniguía de Processing
 ![ ](/images/pde-128.png  "Logo processing")
 Por *Pedro Ruiz Fernández*
 
@@ -6,17 +6,19 @@ Licencia
 
 ![ ](/images/cc.png  "Licencia")
 
-###¿Qué es processing?
+### ¿Qué es processing?
 Proccesing es un lenguaje orientado a objetos, multiplataforma que se basa en otros lenguajes como Java y c++. Está desarrollado en Java y su entorno de desarrollo (IDE) está basado en wiring como Arduino, de ahí su aspecto muy similar.
-###¿Dónde encuentro a processing?
+
+### ¿Dónde encuentro a processing?
 Proccesing lo puedo descargar desde la web oficial https://processing.org/, en ella son espacialmente importantes entre otros los apartados: descargas (https://processing.org/download/),  referencia (https://processing.org/reference/) el cual nos dá una ayuda magnífica a todas las órdenes del lenguaje, tutoriales (https://processing.org/tutorials/), etc. 
-###Entorno de processing
-###Sistema de coordenadas gráficas de Processing
+
+### Entorno de processing
+### Sistema de coordenadas gráficas de Processing
 En processing el origen de coordenadas (0,0) se encuentra en la esquina superior izquierda donde las x son crecientes hacia la derecha y las y son crecientes hacia abajo.
 
-![ ](/images/coordenadas_processing.png  "Sistema de coordenadas")
+![Sistema de coordenadas](/images/coordenadas_processing.png  "Sistema de coordenadas")
 
-###Instrucciones básicas de dibujo
+### Instrucciones básicas de dibujo
 * **size (ancho, alto)**: establece el tamaño de la ventana gráfica.
 * **background (r,g,b)**: establece el color de fondo de la ventana gráfica, en este caso en RGB, cada valor entre 0 y 255.
 * **background (gris)**: establece el color de fondo de la ventana gráfica en escala de grises, el valor entre 0 (negro) y 255 (blanco).
@@ -44,7 +46,7 @@ noFill();
 stroke (255,0,0);
 line (300,300,500,450);
 ~~~
-###Estructura básica de programa en Processing
+### Estructura básica de programa en Processing
 En processing tenemos dos funciones principales (void), una de ellas es *setup* y la otra *draw*, en la primera se realiza una configuración de nuestro programa, por ejemplo el tamaño de la ventana gráfica con *size (tamañoX, tamañoY)*, y se ejecuta una sóla vez. En la función *draw* todo lo que esté definido en la misma se va a repetir indefinidamente.
 En el siguiente programa antes del *setup* definimos la variable x como entera (integer) (*int x*), y en el draw en cada ciclo aumentamos su valor (x=x+1), cambiando el color de fondo y desplazando hacia la derecha la circunferencia.
 ~~~
@@ -81,7 +83,7 @@ void draw() {
  x=x+velx;
 }
 ~~~
-###Variables
+### Variables
 En el ejemplo anterior hemos trabajado con variables, que son elementos sirven para guardar datos que usaremos luego en nuestro programa, las variables pueden ser globales (afectan a todos los procedimientos y se colocan antes de setup) o locales se definen y usan en una función y sólo sirven en ella (ya definiremos las funciones más tarde).
 |**Tipo de variable** | **¿Qué guardan?** | **Ejemplo**|
 |-- | -- | --|
