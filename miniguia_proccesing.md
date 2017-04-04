@@ -257,6 +257,7 @@ Dentro de los condicionales tenemos los elementos comparadores que son:
 |Mayor|Mayor o igual|Menor|Menor o igual|igual
 |--|--|--|--|--
 |>|>=|<|<=|==
+
 Cuidado no confundir el igual de asignación de valor a una variable, por ejemplo “*int x=5*” , con la comprobación si una variable es igual a un dato, por ejemplo “*if (x==5) {instrucciones a realizar}*”.
 Además en este ejemplo usamos en los condicionales combinación de comparadores dentro del *if*, para ello podemos usar:
 - Unión de condiciones (una **y** la otra se deben cumplir) (**&&**): ejemplo “*if  (x>=10 && x<15) {instrucciones a realizar}*”   
