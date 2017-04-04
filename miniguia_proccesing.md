@@ -249,11 +249,14 @@ void draw() {
 
 Finalmente, para probar condiciones múltiples, podemos emplear un "*else if*".  Cuando un else if se utiliza, las sentencias condicionales se evalúan en el orden presentado. Tan pronto como se compruebe que una expresión booleana es verdadera, se ejecuta el código correspondiente y se ignoran las demás expresiones booleanas.
 Además para el siguiente ejemplo debemos conocer las órdenes de visualización de información a través de la consola o terminal:
+
 - ***print (dato)***: visualiza el dato sin hacer salto de línea.
 - ***println (dato)***: visualiza el dato realizando salto de línea.
+
 Si el dato a representar es un texto fijo va entre comillas, si es una variable va sin comillas.
 
 Dentro de los condicionales tenemos los elementos comparadores que son:
+
 |Mayor|Mayor o igual|Menor|Menor o igual|igual
 |--|--|--|--|--
 |>|>=|<|<=|==
