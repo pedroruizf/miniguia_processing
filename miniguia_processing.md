@@ -250,8 +250,8 @@ void draw() {
 Finalmente, para probar condiciones múltiples, podemos emplear un "*else if*".  Cuando un else if se utiliza, las sentencias condicionales se evalúan en el orden presentado. Tan pronto como se compruebe que una expresión booleana es verdadera, se ejecuta el código correspondiente y se ignoran las demás expresiones booleanas.
 Además para el siguiente ejemplo debemos conocer las órdenes de visualización de información a través de la consola o terminal:
 
-- ***print (dato)***: visualiza el dato sin hacer salto de línea.
-- ***println (dato)***: visualiza el dato realizando salto de línea.
+- **print (dato)**: visualiza el dato sin hacer salto de línea.
+- **println (dato)**: visualiza el dato realizando salto de línea.
 
 Si el dato a representar es un texto fijo va entre comillas, si es una variable va sin comillas.
 
@@ -263,6 +263,7 @@ Dentro de los condicionales tenemos los elementos comparadores que son:
 
 Cuidado no confundir el igual de asignación de valor a una variable, por ejemplo “*int x=5*” , con la comprobación si una variable es igual a un dato, por ejemplo “*if (x==5) {instrucciones a realizar}*”.
 Además en este ejemplo usamos en los condicionales combinación de comparadores dentro del *if*, para ello podemos usar:
+
 - Unión de condiciones (una **y** la otra se deben cumplir) (**&&**): ejemplo “*if  (x>=10 && x<15) {instrucciones a realizar}*”   
 - Disyunción de condiciones (una **o** la otra se deben cunplir) (**||**): ejemplo “*if  (x>=10 || x<15) {instrucciones a realizar}*”   
 
