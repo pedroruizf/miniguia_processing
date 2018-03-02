@@ -1,15 +1,22 @@
-int x=30;
 
-if (x<=25) {
- println (x+" es menor o igual a 25"); 
+void setup () {
+  fill (0);
+  size (600, 400);
 }
 
-else if (x>25 && x<=50) {
-  
- println (x+" está entre 25 y 50"); 
-}
+void draw() {
+  background (0);
 
-else if (x>50) {
-  
- println (x+ " es mayor de 50"); 
+  if (mouseX<=200) {
+    fill (255, 0, 0);
+    println (mouseX+" es menor o igual a 200");
+  } else if (mouseX>200 && mouseX<=400) {
+    fill (0, 250, 0);
+    println (mouseX+" está entre 200 y 400");
+  } else if (mouseX>400) {
+    fill (0, 0, 255);
+    println (mouseX+ " es mayor de 400");
+  }  
+
+  ellipse (mouseX, mouseY, 75, 75);
 }
