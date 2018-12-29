@@ -17,12 +17,16 @@ void keyPressed() {
   switch (key) {
   case 'w':
     coorY=coorY-5;
+    break;
   case 's':
     coorY=coorY+5;
+    break;
   case 'd':
     coorX=coorX+5;
+    break;
   case 'a':
     coorX=coorX-5;
+    break;
   }
 
   if (coorX>=width-10) {
